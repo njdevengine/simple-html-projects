@@ -1,0 +1,30 @@
+<html>
+
+    <head>  
+        <title>Javascript</title>
+ 
+    </head>
+
+    <body>
+        <p>Guess a number between 0 and 5! </p>
+        <input type="text" id="guess">
+        <button id="checkGuess">Guess it!</button>
+
+        
+        <script type="text/javascript">
+            
+            document.getElementById("checkGuess").onclick = function() {
+                var answer = (Math.floor(Math.random() * 6));
+            if (document.getElementById("guess").value == answer) {
+                alert("well done! you got it!");}
+                
+                else {alert("Nope! The number was " + answer);}
+            }
+            
+            
+               
+        </script>
+        
+    </body>
+
+</html>
